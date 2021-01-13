@@ -1,0 +1,23 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background-color: black;
+  color: white;
+  width: auto;
+  height: 250px;
+}
+
+main {
+  background-color: blueviolet;
+  width: auto;
+  height: 250px;
+}
+
+footer {
+  background-color: brown;
+  width: auto;
+  height: 250px;
+}
