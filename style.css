@@ -1,23 +1,65 @@
-body {
+/* body {
   margin: 0%;
   padding: 0%;
 }
 
 header {
-  background-color: black;
+  background-color: #e7e7de;
   color: white;
   width: auto;
   height: 250px;
 }
 
 main {
-  background-color: blueviolet;
+  background-color: #008891;
   width: auto;
   height: 250px;
 }
 
 footer {
-  background-color: brown;
+  background-color: #0f3057;
   width: auto;
   height: 250px;
+} */
+body {
+  position: relative;
+  width: 1440px;
+  height: 4551px;
+  background: #06062b;
+  background: radial-gradient(
+    87.74% 87.74% at 50% 50%,
+    #06062b 77.6%,
+    rgba(6, 6, 43, 0) 100%
+  );
+}
+
+.left_Img {
+  position: absolute;
+  width: 721px;
+  height: 462px;
+  left: 663px;
+  top: 240px;
+
+  background: url('./img/planet_4x\ 1.png');
+}
+
+.intro {
+  position: absolute;
+  width: 536px;
+  height: 249px;
+  left: 178px;
+  top: 246px;
+
+  font-family: Rambla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 162.6%;
+  /* or 50px */
+
+  /* display: flex; */
+  align-items: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
 }
