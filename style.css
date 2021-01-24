@@ -1,49 +1,133 @@
-/* body {
+body {
   margin: 0%;
   padding: 0%;
 }
-
-header {
-  background-color: #e7e7de;
+.text {
   color: white;
-  width: auto;
-  height: 250px;
 }
 
-main {
-  background-color: #008891;
+.header {
+  height: 747px;
   width: auto;
-  height: 250px;
-}
-
-footer {
-  background-color: #0f3057;
-  width: auto;
-  height: 250px;
-} */
-body {
-  position: relative;
-  width: 1440px;
-  height: 4551px;
-  background: #06062b;
   background: radial-gradient(
     87.74% 87.74% at 50% 50%,
     #06062b 77.6%,
     rgba(6, 6, 43, 0) 100%
   );
+  /* overflow: hidden; */
 }
 
+.navRight {
+  position: absolute;
+  left: 1000px;
+  top: 100px;
+}
+
+.navRight > img {
+  padding-left: 15px;
+}
+
+section {
+  font-family: 'Rambla', sans-serif;
+  color: white;
+  position: absolute;
+  width: 536px;
+  height: 249px;
+  left: 178px;
+  top: 246px;
+}
+
+section > h2 > span {
+  color: #f5c514;
+}
+
+section > button {
+  /* update CSS */
+  width: 121px;
+  height: 36px;
+  font-family: 'rambla';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: #f5c514;
+  border-radius: 10px;
+  border: none;
+
+  /* text-decoration: none; */
+}
 .left_Img {
   position: absolute;
   width: 721px;
   height: 462px;
   left: 663px;
   top: 240px;
-
   background: url('./img/planet_4x\ 1.png');
 }
+/* Section2 ABOUT */
+.sec2 {
+  height: 433px;
+  width: auto;
+  background: #10103c;
+}
 
-.intro {
+.img_2 {
+  position: absolute;
+  width: 397px;
+  height: 304px;
+  left: 178px;
+
+  top: 812px;
+
+  background: url('./img/47a9eebd72590f559e3193302adea83c\ 1.jpg');
+  border-radius: 90px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.sec3 {
+  height: 1143px;
+  background: #06062b;
+}
+.skillsBox {
+  position: absolute;
+  width: 285px;
+  height: 394px;
+  left: 194px;
+  top: 1357px;
+  background-color: #f5c514;
+}
+
+.skillImg {
+  /* justify-content: center; */
+  position: absolute;
+  margin-left: 50%;
+  /* width: 120px;
+  height: 120px;
+  left: 276px;
+  top: 1408px; */
+}
+
+.sec4 {
+  height: 806px;
+  background: #160944;
+}
+
+.sec5 {
+  background: #06062b;
+  height: 560px;
+}
+
+.sec6 {
+  height: 380px;
+  background: #171740;
+}
+
+.Footer {
+  height: 488px;
+
+  background: #120939;
+}
+
+/* .intro {
   position: absolute;
   width: 536px;
   height: 249px;
@@ -55,11 +139,10 @@ body {
   font-weight: normal;
   font-size: 31px;
   line-height: 162.6%;
-  /* or 50px */
 
-  /* display: flex; */
+  display: flex;
   align-items: center;
   letter-spacing: 0.1em;
 
   color: #ffffff;
-}
+} */
