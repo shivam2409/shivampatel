@@ -1,14 +1,28 @@
 body {
   margin: 0%;
+  width: auto;
   padding: 0%;
 }
+
+.primary-color {
+  color: white;
+  font-family: 'Rambla';
+}
+
 .text {
   color: white;
+  font-family: Rambla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 162.6%;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .header {
   height: 747px;
-  width: auto;
+  /* width: auto; */
   background: radial-gradient(
     87.74% 87.74% at 50% 50%,
     #06062b 77.6%,
@@ -37,11 +51,11 @@ section {
   top: 246px;
 }
 
-section > h2 > span {
+span {
   color: #f5c514;
 }
 
-section > button {
+button {
   /* update CSS */
   width: 121px;
   height: 36px;
@@ -69,41 +83,118 @@ section > button {
   width: auto;
   background: #10103c;
 }
+.desc {
+  /* position: absolute; */
+  width: 483.71px;
+  height: 223.55px;
+  float: right;
+  margin-right: 150px;
+}
 
 .img_2 {
   position: absolute;
   width: 397px;
   height: 304px;
   left: 178px;
-
-  top: 812px;
-
+  margin-top: 70px;
+  /* left: 598px;
+  top: 812px; */
   background: url('./img/47a9eebd72590f559e3193302adea83c\ 1.jpg');
   border-radius: 90px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(0, 0, 1, 0, 0);
 }
 
 .sec3 {
   height: 1143px;
   background: #06062b;
 }
-.skillsBox {
+.secs {
   position: absolute;
-  width: 285px;
-  height: 394px;
-  left: 194px;
-  top: 1357px;
-  background-color: #f5c514;
+  width: 483.71px;
+  height: 223.55px;
+  left: 751.29px;
+  top: 892.45px;
+
+  font-family: Rambla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
 }
 
-.skillImg {
-  /* justify-content: center; */
-  position: absolute;
-  margin-left: 50%;
-  /* width: 120px;
-  height: 120px;
-  left: 276px;
-  top: 1408px; */
+.box {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+
+.singleBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 285px;
+  height: 394px;
+  border-radius: 10px;
+  background-color: #f5c514;
+  margin: 20px;
+  /* padding: 20px; */
+  text-align: center;
+}
+.singleBox:hover {
+  background-color: #473397;
+  color: white;
+  transition: 2;
+}
+
+.boxImg {
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.singleBox:nth-child(1) .boxImg {
+  background-image: url(./img/skill1.svg);
+}
+.singleBox:nth-child(2) .boxImg {
+  background-image: url(./img/skill2.svg);
+}
+.singleBox:nth-child(3) .boxImg {
+  background-image: url(./img/skills3.svg);
+}
+.singleBox:nth-child(4) .boxImg {
+  background-image: url(./img/skill4.svg);
+}
+.singleBox:nth-child(5) .boxImg {
+  background-image: url(./img/skills5.svg);
+}
+
+.header_text {
+  font-family: 'rambla';
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+li {
+  font-family: 'rambla';
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  /* line-height: 30px; */
 }
 
 .sec4 {
@@ -111,11 +202,64 @@ section > button {
   background: #160944;
 }
 
+.buttonsOP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonsOP > button {
+  margin-right: 100px;
+}
+
+.design {
+  background-image: url('./img/design.png');
+  position: absolute;
+  width: 1056px;
+  height: 538px;
+  margin-top: 80px;
+  left: 178px;
+}
+
+.journeyBox {
+  margin-top: -50px;
+  margin-left: 200px;
+  position: absolute;
+  width: 719px;
+  height: 448px;
+  /* left: 374px;
+  top: 2571px; */
+  background: #170556;
+  border-radius: 20px;
+}
+.container {
+  position: absolute;
+  width: auto;
+  height: max-content;
+  /* margin: 20px; */
+  align-items: center;
+  justify-content: center;
+  /* margin: 150px auto; */
+  display: grid;
+  grid-template-columns: repeat(1, 15px);
+  grid-template-rows: repeat(1, 15px);
+}
+
+.conBox {
+  /* position: relative; */
+  width: 230px;
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+}
 .sec5 {
   background: #06062b;
   height: 560px;
+  /* display: flex; */
 }
 
+.content {
+  display: flex;
+}
 .sec6 {
   height: 380px;
   background: #171740;
@@ -126,23 +270,3 @@ section > button {
 
   background: #120939;
 }
-
-/* .intro {
-  position: absolute;
-  width: 536px;
-  height: 249px;
-  left: 178px;
-  top: 246px;
-
-  font-family: Rambla;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 31px;
-  line-height: 162.6%;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.1em;
-
-  color: #ffffff;
-} */
