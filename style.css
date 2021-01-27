@@ -1,6 +1,5 @@
 body {
   margin: 0%;
-  width: auto;
   padding: 0%;
 }
 
@@ -22,6 +21,7 @@ body {
 
 .header {
   height: 747px;
+  width: 100%;
   /* width: auto; */
   background: radial-gradient(
     87.74% 87.74% at 50% 50%,
@@ -31,10 +31,20 @@ body {
   /* overflow: hidden; */
 }
 
+.header nav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.navLeft {
+  grid-column: 2;
+}
+
 .navRight {
-  position: absolute;
-  left: 1000px;
-  top: 100px;
+  grid-column: 4;
+  /* width: max-content; */
+  justify-self: end;
 }
 
 .navRight > img {
@@ -44,14 +54,10 @@ body {
 section {
   font-family: 'Rambla', sans-serif;
   color: white;
-  position: absolute;
-  width: 536px;
-  height: 249px;
-  left: 178px;
-  top: 246px;
 }
 
 span {
+  font-family: 'rambla';
   color: #f5c514;
 }
 
@@ -69,13 +75,24 @@ button {
 
   /* text-decoration: none; */
 }
+
+.intro-section {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  position: relative;
+  height: 500px;
+}
+
 .left_Img {
   position: absolute;
   width: 721px;
   height: 462px;
-  left: 663px;
-  top: 240px;
-  background: url('./img/planet_4x\ 1.png');
+  /* float: right; */
+  /* left: 663px; */
+  /* top: 240px; */
+  background: url(./img/planet_4x\ 2.png) no-repeat;
+  grid-column: 3/5;
 }
 /* Section2 ABOUT */
 .sec2 {
@@ -214,43 +231,35 @@ li {
 .design {
   background-image: url('./img/design.png');
   position: absolute;
+  /* overflow: hidden; */
   width: 1056px;
   height: 538px;
   margin-top: 80px;
   left: 178px;
 }
 
-.journeyBox {
-  margin-top: -50px;
-  margin-left: 200px;
-  position: absolute;
-  width: 719px;
-  height: 448px;
-  /* left: 374px;
-  top: 2571px; */
-  background: #170556;
-  border-radius: 20px;
-}
 .container {
   position: absolute;
-  width: auto;
-  height: max-content;
-  /* margin: 20px; */
+  margin-top: 120px;
+  padding: 20px;
+
+  /* height: max-content; */
   align-items: center;
   justify-content: center;
-  /* margin: 150px auto; */
   display: grid;
-  grid-template-columns: repeat(1, 15px);
-  grid-template-rows: repeat(1, 15px);
+  left: 370px;
+  grid-template-columns: repeat(2, 340px);
+  grid-template-rows: repeat(1, 180px);
+  background-color: #170556;
 }
 
 .conBox {
-  /* position: relative; */
+  padding-left: 15px;
   width: 230px;
   align-items: center;
   justify-content: center;
-  /* align-content: center; */
 }
+
 .sec5 {
   background: #06062b;
   height: 560px;
@@ -267,6 +276,9 @@ li {
 
 .Footer {
   height: 488px;
-
   background: #120939;
+}
+
+.lastPic {
+  float: right;
 }
