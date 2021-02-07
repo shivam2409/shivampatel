@@ -9,6 +9,8 @@ body {
 }
 
 .text {
+  margin: 0;
+  padding-top: 20px;
   color: white;
   font-family: Rambla;
   font-style: normal;
@@ -84,6 +86,13 @@ button {
   height: 500px;
 }
 
+.introduction {
+  display: grid;
+  /* grid-template-columns:  */
+  /* grid-column: span; */
+  grid-column: 2;
+}
+
 .left_Img {
   position: absolute;
   width: 721px;
@@ -100,25 +109,20 @@ button {
   width: auto;
   background: #10103c;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
 .desc {
-  /* position: absolute; */
-  width: 483.71px;
   height: 223.55px;
-  float: right;
-  margin-right: 150px;
 }
 
 .img_2 {
-  position: absolute;
   width: 397px;
   height: 304px;
-  left: 178px;
-  margin-top: 70px;
-  /* left: 598px;
-  top: 812px; */
   background: url('./img/47a9eebd72590f559e3193302adea83c\ 1.jpg');
   border-radius: 90px;
-  transform: matrix(0, 0, 1, 0, 0);
 }
 
 .sec3 {
@@ -215,49 +219,54 @@ li {
 }
 
 .sec4 {
-  height: 806px;
   background: #160944;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .buttonsOP {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-.buttonsOP > button {
-  margin-right: 100px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .design {
-  background-image: url('./img/design.png');
+  background-image: url(./img/design.png);
   position: absolute;
   /* overflow: hidden; */
-  width: 1056px;
+  width: 1050px;
+  transform: translate(-50%) scale(0.9);
   height: 538px;
-  margin-top: 80px;
-  left: 178px;
+  /* margin-top: 80px; */
+  /* left: 178px; */
+  top: 73px;
+  left: 50%;
 }
 
 .container {
-  position: absolute;
+  position: relative;
   margin-top: 120px;
+  /* height: auto; */
   padding: 20px;
-
   /* height: max-content; */
   align-items: center;
   justify-content: center;
   display: grid;
-  left: 370px;
+  /* left: 370px; */
   grid-template-columns: repeat(2, 340px);
-  grid-template-rows: repeat(1, 180px);
+  /* grid-template-rows: repeat(1, 180px); */
+  /* grid-gap: 50px; */
   background-color: #170556;
+  width: max-content;
+  margin: auto;
 }
 
 .conBox {
-  padding-left: 15px;
-  width: 230px;
-  align-items: center;
-  justify-content: center;
+  padding: 15px;
 }
 
 .sec5 {
