@@ -64,7 +64,6 @@ span {
 }
 
 button {
-  /* update CSS */
   width: 121px;
   height: 36px;
   font-family: 'rambla';
@@ -74,8 +73,6 @@ button {
   background-color: #f5c514;
   border-radius: 10px;
   border: none;
-
-  /* text-decoration: none; */
 }
 
 .intro-section {
@@ -88,8 +85,6 @@ button {
 
 .introduction {
   display: grid;
-  /* grid-template-columns:  */
-  /* grid-column: span; */
   grid-column: 2;
 }
 
@@ -97,9 +92,6 @@ button {
   position: absolute;
   width: 721px;
   height: 462px;
-  /* float: right; */
-  /* left: 663px; */
-  /* top: 240px; */
   background: url(./img/planet_4x\ 2.png) no-repeat;
   grid-column: 3/5;
 }
@@ -149,13 +141,11 @@ button {
 
 .box {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
 }
 
 .singleBox {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,13 +155,12 @@ button {
   border-radius: 10px;
   background-color: #f5c514;
   margin: 20px;
-  /* padding: 20px; */
   text-align: center;
 }
 .singleBox:hover {
   background-color: #473397;
-  color: white;
   transition: 2;
+  color: #ffffff;
 }
 
 .boxImg {
@@ -205,17 +194,15 @@ button {
 
 .header_text {
   font-family: 'rambla';
-  font-size: 24px;
   font-weight: bold;
+  color: #06062b;
   line-height: 48px;
 }
-
 li {
   font-family: 'rambla';
   font-size: 15px;
   font-weight: bold;
   margin-top: 10px;
-  /* line-height: 30px; */
 }
 
 .sec4 {
@@ -237,12 +224,9 @@ li {
 .design {
   background-image: url(./img/design.png);
   position: absolute;
-  /* overflow: hidden; */
   width: 1050px;
   transform: translate(-50%) scale(0.9);
   height: 538px;
-  /* margin-top: 80px; */
-  /* left: 178px; */
   top: 73px;
   left: 50%;
 }
@@ -250,16 +234,11 @@ li {
 .container {
   position: relative;
   margin-top: 120px;
-  /* height: auto; */
   padding: 20px;
-  /* height: max-content; */
   align-items: center;
   justify-content: center;
   display: grid;
-  /* left: 370px; */
   grid-template-columns: repeat(2, 340px);
-  /* grid-template-rows: repeat(1, 180px); */
-  /* grid-gap: 50px; */
   background-color: #170556;
   width: max-content;
   margin: auto;
@@ -272,7 +251,6 @@ li {
 .sec5 {
   background: #06062b;
   height: 560px;
-  /* display: flex; */
 }
 
 .content {
